@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<info>
+	<id>geomap</id>
+	<name>geoMap</name>
+	<description>Map app using french map (IGN)</description>
+	<version>1.6</version>
+	<licence>AGPL</licence>
+	<author>Adrien Gressin</author>
+	<require>4</require>
+	<public>
+		<geomap>log.php</geomap>
+	</public>
+</info>

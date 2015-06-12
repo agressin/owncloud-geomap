@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------
+Bugs :
+- CSS :
+    -> gestion redimensionnement !	
+- API :
+	-> pb sur https ?
+    OSM + Geoportail : cf http://www.utagawavtt.com/gmap/scripts/carte-generale-topos-vtt.js
+		(openlayer + wms pour geoportail)
+
+--------------------------------------------------------------------------------
+Features :
+
+1/ Liste GPX :
+    - cacher carte et afficher + d'info sur chaque gpx (date, durée, longeur, d+, type activitée??)
+    -> vu calendrier
+
+2/ Images géoréférencées : [~ok]
+    - preview dans popup : utiliser ajax_core_preview
+
+3/ Carte Public :
+        - ma position 
+        - mes photos (juste un album)?
+        - une trace
+        - autres ?
+    -> cf http://owncloud.org/apps/share-api/
+          apps/gallery/js/gallery.js -> share
+
+4/ GPX :
+    - envoyer directement les parcours pour aller plus vite ?
+    - Clic sur GPX
+	    -> ajout "patience"
+	    -> info sur le fichier :
+    		- vitesse moyenne/max, altitude min/moy/max
+    - info fichier : nb montée / descente : cf test avec octave
+
+5/ Pts Ma Position :
+	a/ Stockage
+	 -> modif nom bd geomap_pos
+     -> ajout id_object (pour tracker plusieurs objects ratachés à un user)
+
+	b/ Visu :
+		-> Choix de la date
+			<input type="text" name="from" id="from" class="hasDatepicker">
+		-> afficher info (nb pts / distance)
+
+	c/ Param :
+		-> Partage avec autre utilisateur ?
+			-> bd avec lien partage !
+				(user / group) cf calendar
+
+6/ Pts Favoris
+	a/ Stockage
+	 -> bd geomap_items
+	 		lat, lon, uid_owner, description, date, autres ?
+	-> ajout / suppression
+
+7/ Autre :
+ - Connection à garmin :
+    http://sergeykrasnov.ru/subsites/dev/garmin-connect-statisics/
+
+################################################################################
+
+https://github.com/owncloud/apps/commits/map_app/map
+	
+var API_KEY="1q5nm7xaqgafxx9s8dgn1itg";// http://cephee.fr
+var API_KEY="lkwtfxe9ainaa5kha0cvgqez"; // http://owncloud.cephee.fr
+var API_KEY="6w4fpxmo93lrwxlpoa3au7ew"; // https://owncloud.cephee.fr

@@ -1,0 +1,150 @@
+.entry-content img {max-width: 100%; /* override */}
+
+#content-wrapper {
+        overflow-y: hidden;
+}
+#app-navigation > ul {
+        clear: both;
+}
+#app-navigation > ul ul {
+        display: inline;
+        width: 100%
+}
+#map {
+        width: 100%;
+        position: relative;
+        height: 100%;
+}
+
+
+
+.geomap_list, .map_all {
+   display: inline-block;
+   vertical-align: top;
+}
+
+#map_all {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+#map_view {
+    height: 80%;
+    width: 100%;
+}
+
+#plot_view {
+    position: relative; 
+    width: 49%;
+    height: 19%;
+    float: left;
+}
+
+#plot_view_speed {
+    position: relative; 
+    width: 49%;
+    height: 19%;
+    float: left;
+}
+
+#leftcontent{
+    overflow:hidden;
+}
+
+
+#geomap_position{
+    height: 5em;
+}
+
+#geomap_gpx{
+    height: 70%;
+}
+
+#geomap_gpx_list{
+    height: 95%;
+    overflow: auto;
+}
+
+#geomap_gpx_info{
+    height:13em;
+    max-height:20%;
+    overflow: hidden;
+}
+
+#data_view {
+    height:90%;
+    width:100%;
+    overflow: auto;
+}
+
+#rightcontent .map {	
+  position: fixed;
+  top: 3.5em;
+  bottom: 3.5em;
+  left: 25em;
+  right: 0;
+  overflow: auto;
+}
+
+
+#rightcontent .float {
+  position:fixed;
+  bottom: 0;
+  width: 30em;
+  height:20em;
+  margin: 1em 0;
+}
+
+
+#rightcontent .graph {
+  position:fixed;
+  bottom: 0;
+  left: 25em;
+  width: 30em;
+  height:20em;
+  margin: 1em 0;
+}
+#rightcontent .graphSpeed {
+  position:fixed;
+  left: 60em;
+  right:0;
+  bottom: 0;
+  width: 30em;
+  height:20em;
+  margin: 1em 0;
+}
+
+#noFiles  {
+	position: absolute;
+	width: 60%;
+	height: auto;
+	top: 50%;
+	margin-left:20%;
+	margin-right:20%;
+	background-color: white;
+	opacity: 0.85;
+	padding: 0.5em;
+	color: #888888;
+    font-size: 1.5em;
+    font-weight: bold;
+    /*margin: 10em 0 0 10em;*/
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#noFiles p {text-align:center;}
+
+#geomap_list h1 {
+	font-weight:bold; display: block;
+  margin-bottom: 0.7em;
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+#geomap_list form { padding-left: 1em;}
+
+#geomap_list .mylist tr:hover {  background-color:#ccc; }
+#geomap_list .mylist tr td {  padding:5px; }
+
+#geomap_list .data h1 {font-weight:bold; padding:5px }
+#geomap_list .data tr:hover {  background-color:#ccc; }
+#geomap_list .data tr td {  padding:5px; }
